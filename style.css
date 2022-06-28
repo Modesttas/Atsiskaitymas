@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+body{
+    padding: 6%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(109, 110, 111);
+    font-weight: 100;
+    padding-right: 0.5em;
+    
+}
+
+header nav a:last-child{
+    color: rgb(226, 43, 211);
+    
+}
+
+
+
+.section-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.launching {
+    color: rgb(226, 43, 195);
+    font-size: small;
+    padding-top: 100px;
+    
+    
+}
+
+.section-1 h1{
+    font-size: 50px;
+
+  
+}
+
+.section-1-1 p:nth-of-type(2){
+    color:grey;
+}
+
+div button{
+    border-radius: 60px;
+    background-color: transparent;
+    font-size: 14px;
+    margin-top: 5px;
+    border: solid rgb(255, 120, 37);  
+    padding: 15px 40px;
+
+}
+
+.banner{
+    background-image:url(/assets/background.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    height: 220px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+}
+
+.companies{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+    
+}
+
+
+.deco h4{
+    color: rgb(1, 1, 1);
+font-weight: 200px;
+
+}
+
+.deco p{
+    color: rgb(109, 110, 111);
+    font-size: 15px;
+    
+}
+
+.deco p a{
+    color: rgb(109, 110, 111);
+}
+
+div span{
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+}
+.info{
+    background-color: rgb(169, 169, 172);
+    max-width: 400px;
+    border-radius: 20px;
+    margin-top: 0;
+    
+
+}
+.card{
+   
+    background-color: rgb(200, 199, 196);
+    border-radius: 20px;
+    display: grid;
+    grid-template-areas:
+    'a a'
+    'b c';
+}
+.card img{
+    grid-area: a;
+}
+.left{
+    grid-area: b;
+    padding-left: 5px;
+}
+.right{
+    grid-area: c;
+    text-align: right;
+    padding-right: 5px;
+}
+.product{
+    display: flex;
+    justify-content: space-around
+}
+
+
+
+.imgwomen{
+margin-right: 200px;
+}
+
+
+.collection{
+    color: rgb(109, 110, 111);
+    font-weight: 100;
+   
+}
+
+
+
+.social{
+    display: flex;
+    flex-direction: row;
+    width: 20px;
+    height: 20px;
+    color: rgb(109, 110, 111);
+    margin-left: 60px;
+
+}
+
+
+.hr{
+    border-top: solid 2px;
+    color: rgb(214, 214, 214);
+
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.social img{
+    margin: 3px
+}
+
+
+.bottomnav p:first-of-type{
+    font-weight: bold;
+}
+.bottomnav p{
+    color: rgb(109, 110, 111);
+    font-weight: 100;
+    padding-right: 0.5em;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    color: grey;
+}
+.contacts-inside{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 50px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(109, 110, 111);
+    font-weight: 100;
+    padding-right: 0.5em;
+    
+}
+.footerimg{
+   
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        padding: 0;
+    }
+    header nav a{
+        display: none;
+    }
+    .section-1{
+        padding: 6%;
+        padding-right: 0;
+    }
+    .section-1-1{
+        width: 50%;
+    }
+    .section-1-2{
+        width: 50%;
+        overflow: hidden;
+    }
+    .section-1-2 img{
+        overflow: hidden;
+    }
+    .banner{
+        border-radius: 0;
+        overflow: hidden;
+    }
+    .deco1{
+        padding: 6%;
+    }
+    .companies{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+    .companies img:nth-of-type(4){
+        display: none;
+    }
+    .product{
+        display: flex;
+        justify-content: space-around;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .product img{
+    }
+    footer{
+        padding: 6%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .contacts-inside{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 100px;
+    }
+    .footer{
+        padding: 6%;
+    }
+    .footer p:nth-of-type(2){
+        display: none;
+    }
+}
+
